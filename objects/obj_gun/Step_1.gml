@@ -1,6 +1,11 @@
 // gives it a bit of heft in the begin step
-x = obj_player.x;
-y = obj_player.y+10;
+
+// float a bit above character
+x = obj_player.x+20;
+y = obj_player.y-30;
+if(obj_player.image_xscale == -1){
+	x = obj_player.x-20;
+}
 
 if(obj_player.controller == 0){
 	// follow mouse
@@ -24,15 +29,20 @@ firing_delay -= 1;
 recoil = max(0, recoil - 1);
 
 if(key_shoot && firing_delay < 0){
-	firing_delay = 5;
+	firing_delay = base_delay;
 	recoil = 4;
 	ScreenShake(2,10);
 	audio_sound_pitch(snd_shoot, choose(0.7, 1.0, 1.3));
 	audio_play_sound(snd_shoot, 5, false);
 	with(instance_create_layer(x,y,"Projectiles",obj_bullet)){
-		speed = 25;
+		spd = other.base_bullet_speed;
 		direction = other.image_angle + random_range(-3, 3);
 		image_angle = direction;
+	}
+	with(obj_player){
+		// kickback maybe
+		// gunkickx = lengthdir_x(1.5, other.image_angle-180);
+		// gunkicky = lengthdir_y(1, other.image_angle-180);
 	}
 	
 }

@@ -27,4 +27,8 @@ for (var i = 0; i < menu_items; i++){
 	
 }
 
+draw_set_color(c_black);
+draw_rectangle(gui_width, gui_height - 200, gui_width+900, gui_height, false);
+draw_set_color(c_white);
+
 draw_set_halign(fa_left);

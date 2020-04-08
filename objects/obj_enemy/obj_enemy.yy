@@ -15,16 +15,6 @@
             "m_owner": "fc54e5a1-220c-4beb-a033-8e62e22369ac"
         },
         {
-            "id": "0a9deb21-145d-4e68-ab73-d0f78ddf455c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "fc54e5a1-220c-4beb-a033-8e62e22369ac"
-        },
-        {
             "id": "7353715a-81fc-43e6-ace1-714fc6ce2891",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -33,11 +23,21 @@
             "enumb": 1,
             "eventtype": 3,
             "m_owner": "fc54e5a1-220c-4beb-a033-8e62e22369ac"
+        },
+        {
+            "id": "4a98668b-87d2-4b2b-8a23-a9301ac4fbdc",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "fc54e5a1-220c-4beb-a033-8e62e22369ac"
         }
     ],
     "maskSpriteId": "a5873f01-c74e-4533-be41-d2bb7ffcd709",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "4e33526a-2a45-4b53-8069-8e937c759ef4",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -123,34 +123,6 @@
             "varType": 0
         },
         {
-            "id": "e9739880-7226-4053-be6f-2a0ea5440729",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "4",
-            "varName": "hp",
-            "varType": 0
-        },
-        {
-            "id": "84af2ae1-c963-42e6-8300-823ca289e8b2",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "flash",
-            "varType": 0
-        },
-        {
             "id": "e1d7e03e-204a-4b46-a4ae-b9c8ef4badd0",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -177,6 +149,48 @@
             "value": "1",
             "varName": "size",
             "varType": 0
+        },
+        {
+            "id": "393e140a-8caf-483e-b245-99cc5346139d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "afraid_of_heights",
+            "varType": 3
+        },
+        {
+            "id": "f127fdb1-ec94-4fea-a7a3-3d621c74b497",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "grounded",
+            "varType": 3
+        },
+        {
+            "id": "3013d352-22c3-4890-a8dc-18878793cc04",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "has_weapon",
+            "varType": 3
         }
     ],
     "solid": false,

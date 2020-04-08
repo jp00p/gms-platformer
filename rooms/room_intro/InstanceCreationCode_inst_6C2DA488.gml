@@ -1,1 +1,0 @@
-follow = obj_camera;

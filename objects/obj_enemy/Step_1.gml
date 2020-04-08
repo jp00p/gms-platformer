@@ -9,5 +9,15 @@ if(hp <= 0){
 			image_yscale = other.size;
 		}
 	}
+	with(my_gun){
+		instance_destroy();
+	}
+	if(instance_exists(obj_player)){
+		global.kills++;
+		global.kills_this_room++;
+		with(obj_game){
+			kill_textscale = 2;
+		}
+	}
 	instance_destroy();
 }

@@ -1,7 +1,14 @@
+acc = 0.5;
 h_spd = 0;
 v_spd = 0;
-grv = 0.2;
+grv = 0.4;
 walk_spd = 4;
 run_spd = 6;
+jump_speed = 8;
 controller = 0;
 has_control = true;
+can_jump = 1;
+gunkickx = 0;
+gunkicky = 0;
+jump_number = 1; // double jump!?
+jump_current = 0;

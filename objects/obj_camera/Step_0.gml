@@ -24,9 +24,10 @@ shake_remain = max(0, shake_remain-((1/shake_length)*shake_magnitude));
 
 camera_set_view_pos(cam, x-view_w_half, y-view_h_half);
 
-if(layer_exists("Mountains")){
-	layer_x("Mountains", x/2);	
+if(layer_exists("BG_Cam1")){
+	layer_x("BG_Cam1", x/4);	
+	
 }
-if(layer_exists("Trees")){
-	layer_x("Trees", x/4);	
+if(layer_exists("BG_Cam2")){
+	layer_x("BG_Cam2", x/8);
 }
