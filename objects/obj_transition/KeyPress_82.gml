@@ -1,2 +1,2 @@
 ///@description debug restart
-SlideTransition(TRANS_MODE.RESTART);
+//SlideTransition(TRANS_MODE.RESTART);
