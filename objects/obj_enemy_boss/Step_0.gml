@@ -1,8 +1,3 @@
-// boss moves:
-// patrol + shoot slow
-// jump around + shoot crazy
-// stand still + big shoot
-
 if(hp <= 10){ 
 	image_blend = c_red;
 }
@@ -12,51 +7,57 @@ if(instance_exists(obj_player)){
 	boss_timer--;
 
 	if(boss_timer <= 0){
+		
 		if(obj_player.y < y){
 			boss_move = choose(2,4);
 		} else {
-			boss_move = choose(1,3);
+			boss_move = choose(1,2,3,4);
 		}
-		boss_timer = boss_move_interval;
+		
+		if(hp <= 10){
+			boss_timer = 4*room_speed;
+		} else {
+			boss_timer = boss_move_interval;
+		}
 	}
 
 
 
-		v_spd = v_spd + grv;
+	v_spd = v_spd + grv;
 
-		// don't walk off edges
-		if ((grounded) && (afraid_of_heights) && (!place_meeting(x + (sprite_width/2), y+1, obj_wall))){
-			h_spd = -h_spd;
+	// don't walk off edges
+	if ((grounded) && (afraid_of_heights) && (!place_meeting(x + (sprite_width/2), y+1, obj_wall))){
+		h_spd = -h_spd;
+	}
+
+	// horizontal collision
+	if(place_meeting(x+h_spd, y, obj_wall)){
+		while(!place_meeting(x+sign(h_spd),y,obj_wall)){
+			x += sign(h_spd);
 		}
+		h_spd = -h_spd;	
+	}
+	
+	x += h_spd;
 
-		// horizontal collision
-		if(place_meeting(x+h_spd, y, obj_wall)){
-			while(!place_meeting(x+sign(h_spd),y,obj_wall)){
-				x += sign(h_spd);
-			}
-			h_spd = -h_spd;	
+
+
+	//vertical collision
+	if(place_meeting(x, y+v_spd, obj_wall)){
+		while(!place_meeting(x,y+sign(v_spd),obj_wall)){
+			y += sign(v_spd);
 		}
 	
-		x += h_spd;
-
-
-
-		//vertical collision
-		if(place_meeting(x, y+v_spd, obj_wall)){
-			while(!place_meeting(x,y+sign(v_spd),obj_wall)){
-				y += sign(v_spd);
-			}
+		v_spd = 0;
 	
-			v_spd = 0;
-	
-		}
+	}
 
-		// actually move
-		if(flying){
-			y = ystart + amp*sin(x/freq);
-		} else {
-			y += v_spd;
-		}
+	// actually move
+	if(flying){
+		y = ystart + amp*sin(x/freq);
+	} else {
+		y += v_spd;
+	}
 
 
 

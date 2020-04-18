@@ -28,3 +28,5 @@ shield_rotate = 0;
 // gun kickback
 gunkickx = 0;
 gunkicky = 0;
+
+instance_create_layer(x,y,"Instances",obj_shadow);

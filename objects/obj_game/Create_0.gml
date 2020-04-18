@@ -7,3 +7,4 @@ global.kills = 0;
 global.kills_this_room = 0;
 kill_textscale = 1;
 global.has_gun = true;
+paused = false;

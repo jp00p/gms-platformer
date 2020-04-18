@@ -36,7 +36,9 @@
         "c8f363df-d388-453e-b00a-7287e0d1aeb4",
         "12fb6738-95a3-4d04-87a4-b3ddfddd0288",
         "7f3c934c-9e59-44b9-a47e-a0dcb2386e21",
-        "f529c92b-0754-4962-84fa-d3d67d2ebef6"
+        "f529c92b-0754-4962-84fa-d3d67d2ebef6",
+        "5588dcfe-ca94-4e17-a277-3847f64c20e0",
+        "27b497d5-f21f-4f99-bb00-813b35e1eab6"
     ],
     "filterType": "GMSprite",
     "folderName": "LevelGraphics",

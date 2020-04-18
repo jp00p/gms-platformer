@@ -73,7 +73,7 @@
             "mvc": "1.0",
             "objectId": "4e33526a-2a45-4b53-8069-8e937c759ef4",
             "propertyId": "ca65bcc8-ee5c-4c8a-b354-fc1efc1daccb",
-            "value": "5"
+            "value": "42"
         }
     ],
     "parentObjectId": "4e33526a-2a45-4b53-8069-8e937c759ef4",
@@ -185,7 +185,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "3",
+            "value": "2",
             "varName": "size",
             "varType": 4
         },

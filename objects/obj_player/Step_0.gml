@@ -6,6 +6,7 @@ if(has_control){
 	key_jump = keyboard_check_pressed(vk_space);
 	key_run = keyboard_check(vk_shift);
 	key_down = keyboard_check(ord("S"));
+	
 
 	if((key_left) || (key_right) || (key_jump)){
 		controller = 0;

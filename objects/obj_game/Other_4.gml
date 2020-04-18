@@ -31,4 +31,9 @@ switch(room){
 		audio_play_sound(snd_game_over_music, 1, true);
 	break;
 	
+	case room_ending:
+		audio_play_sound(snd_victory_music, 1, true);
+	break;
+		
+	
 }

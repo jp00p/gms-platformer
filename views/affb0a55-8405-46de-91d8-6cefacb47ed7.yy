@@ -19,7 +19,8 @@
         "60072902-97b6-47eb-acf8-9db7f29ab825",
         "96f06fdc-9f3a-4551-8f4d-a691c2739c92",
         "c64d67d6-4eb7-4c7d-87c5-b1936fad0d07",
-        "bb2ee7bb-1914-443d-9869-811e147cc0c7"
+        "bb2ee7bb-1914-443d-9869-811e147cc0c7",
+        "85136590-62dd-4988-86a1-d7d08c3fc51b"
     ],
     "filterType": "GMSprite",
     "folderName": "LevelObjects",
