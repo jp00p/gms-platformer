@@ -1,0 +1,1 @@
+draw_text(x,y, "x:"+string(pos_x)+" y:"+string(pos_y)+" m:"+string(moving));

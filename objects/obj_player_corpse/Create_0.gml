@@ -7,7 +7,7 @@ image_speed = 0.1;
 image_index = -1;
 ScreenShake(6,60);
 audio_play_sound(snd_death, 10, false);
-game_set_speed(15, gamespeed_fps);
+game_set_speed(30, gamespeed_fps);
 
 
 

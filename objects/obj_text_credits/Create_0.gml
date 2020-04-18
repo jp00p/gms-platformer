@@ -1,0 +1,2 @@
+yy = RES_H;
+credits_text = "Game Code: Jeremy\n\n\nPower-up Sprites: Kimmi\n\n\nExecutive Producer: Momo\n\n\nProducer: Mochi\n\n\nWriter: Mori\n\n\nDirector: Mortimer\n\n\nDirector of Photography: Moreau\n\n\nKey Grip: Mika\n\n\nGaffer: Dorian\n\n\nProduction Designer: Luna\n\n\nSpecial Thanks: Luis Zuno @ansimuz\n\n\n\n\n\n\nThanks for playing!";

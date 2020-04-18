@@ -17,8 +17,8 @@ if(instance_exists(obj_player)){
 			if(!collision_line(x,y, obj_player.x, obj_player.y, obj_wall, false, false)){
 				audio_sound_pitch(snd_shoot, choose(0.5, 0.6, 0.4));
 				audio_play_sound(snd_shoot, 5, false);
-				with(instance_create_layer(x,y,"Projectiles",obj_enemy_bullet)){
-					spd = 25;
+				with(instance_create_layer(x,y,"Projectiles",gun_bullet)){
+					spd = 5;
 					direction = other.image_angle + random_range(-3, 3);
 					image_angle = direction;
 				}

@@ -5,6 +5,7 @@ if(has_control){
 	key_right = keyboard_check(ord("D")) || keyboard_check(vk_right);
 	key_jump = keyboard_check_pressed(vk_space);
 	key_run = keyboard_check(vk_shift);
+	key_down = keyboard_check(ord("S"));
 
 	if((key_left) || (key_right) || (key_jump)){
 		controller = 0;
@@ -38,9 +39,8 @@ var move = (key_right - key_left);
 
 // apply movement speed (no acceleration)
 h_spd = (move * spd) + gunkickx;
-gunkickx = 0;
 v_spd = (v_spd + grv) + gunkicky;
-gunkicky = 0;
+
 
 
 // jump
@@ -48,8 +48,13 @@ gunkicky = 0;
 if((can_jump > 0) && key_jump && jump_current > 0){
 	v_spd = -jump_speed;
 	jump_current--;
-	//can_jump = 0;
 }
+
+
+if(place_meeting(x+h_spd, y, obj_death_wall) || place_meeting(x, y+v_spd, obj_death_wall)){
+	KillPlayer();
+}
+
 
 
 // horizontal collision
@@ -67,8 +72,14 @@ x += h_spd;
 //vertical collision
 if(place_meeting(x, y+v_spd, obj_wall)){
 	while(!place_meeting(x,y+sign(v_spd),obj_wall)){
+		repeat(2){
+			with(instance_create_layer(x,bbox_top,"Projectiles",obj_dust)){
+				v_spd = 0;
+			}
+		}
 		y += sign(v_spd);
 	}
+	
 	if(v_spd > 0){
         jump_current = jump_number;
     }
@@ -110,9 +121,20 @@ if(!place_meeting(x, y+1, obj_wall)){
 	if(h_spd == 0){
 		sprite_index = spr_player;
 	} else {
-		sprite_index = spr_player_running;
-		if(aimside != sign(h_spd)){
-			sprite_index = spr_player_running_backwards;
-		} 
+		if(gunkickx == 0){
+			sprite_index = spr_player_running;
+		
+			if(aimside != sign(h_spd)){
+				sprite_index = spr_player_running_backwards;
+			}
+		}
 	}
 }
+
+
+
+gunkickx = 0;
+gunkicky = 0;
+
+if(shield){ shield_rotate++; }
+buffer--; //invinc

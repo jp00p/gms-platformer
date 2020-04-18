@@ -21,7 +21,7 @@ if(menu_control){
 		menu_x_target = gui_width + 200;
 		menu_committed = menu_cursor;
 		ScreenShake(4, 30);
-		audio_play_sound(snd_death, 5, false);
+		audio_play_sound(snd_confirm, 5, false);
 		menu_control = false;
 	}
 	
@@ -32,7 +32,7 @@ if(menu_control){
 			menu_x_target = gui_width + 200;
 			menu_committed = menu_cursor;
 			ScreenShake(4, 30);
-			audio_play_sound(snd_death, 5, false);
+			audio_play_sound(snd_confirm, 5, false);
 			menu_control = false;
 		}
 	}

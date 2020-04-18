@@ -1,1 +1,1 @@
-target = room_ending;
+target = room_2;

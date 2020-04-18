@@ -33,10 +33,29 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "fc54e5a1-220c-4beb-a033-8e62e22369ac"
+        },
+        {
+            "id": "db2dade4-b77f-4b2e-87a4-1a35df24ddcd",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "fc54e5a1-220c-4beb-a033-8e62e22369ac"
         }
     ],
     "maskSpriteId": "a5873f01-c74e-4533-be41-d2bb7ffcd709",
-    "overriddenProperties": null,
+    "overriddenProperties": [
+        {
+            "id": "c1eecd14-2119-4b67-9a91-2ee1c6d9227b",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "4e33526a-2a45-4b53-8069-8e937c759ef4",
+            "propertyId": "ca65bcc8-ee5c-4c8a-b354-fc1efc1daccb",
+            "value": "1"
+        }
+    ],
     "parentObjectId": "4e33526a-2a45-4b53-8069-8e937c759ef4",
     "persistent": false,
     "physicsAngularDamping": 0.1,
@@ -76,7 +95,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.2",
+            "value": "0.4",
             "varName": "grv",
             "varType": 0
         },
@@ -92,7 +111,7 @@
             "resourceFilter": 1023,
             "value": "2",
             "varName": "walk_spd",
-            "varType": 0
+            "varType": 4
         },
         {
             "id": "fa87d5ca-4953-42a2-837b-bc1fe8c48d16",
@@ -106,7 +125,7 @@
             "resourceFilter": 1023,
             "value": "walk_spd",
             "varName": "h_spd",
-            "varType": 0
+            "varType": 4
         },
         {
             "id": "a392ff69-2899-4cfb-9f4b-948563160dc7",
@@ -148,7 +167,7 @@
             "resourceFilter": 1023,
             "value": "1",
             "varName": "size",
-            "varType": 0
+            "varType": 4
         },
         {
             "id": "393e140a-8caf-483e-b245-99cc5346139d",
@@ -190,6 +209,146 @@
             "resourceFilter": 1023,
             "value": "False",
             "varName": "has_weapon",
+            "varType": 3
+        },
+        {
+            "id": "61868410-948e-48de-a99e-953dfa17c0da",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "100",
+            "varName": "amp",
+            "varType": 0
+        },
+        {
+            "id": "09cee3ca-570f-463f-a427-f21f26fa08d6",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "32",
+            "varName": "freq",
+            "varType": 0
+        },
+        {
+            "id": "2c13635f-0004-497a-a50f-577425f92e2a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "flying",
+            "varType": 3
+        },
+        {
+            "id": "96ab3059-f40d-4ed6-a91d-cff0c0551145",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "simple_sprite",
+            "varType": 3
+        },
+        {
+            "id": "51f6adb3-49a3-4f8c-908a-ac31e1a8d4db",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "spr_enemy",
+            "varName": "default_sprite",
+            "varType": 5
+        },
+        {
+            "id": "219e1bfa-b798-45c7-b680-2f4d13c3cb14",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "spr_enemy_running",
+            "varName": "default_running_sprite",
+            "varType": 5
+        },
+        {
+            "id": "9dc69bba-5ca6-4c8b-8c8f-c340c2d6224e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "spr_enemy_airborne",
+            "varName": "default_air_sprite",
+            "varType": 5
+        },
+        {
+            "id": "5b26a3ed-a52a-4301-bd97-ccec2a345a58",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "obj_enemy_bullet",
+            "varName": "gun_bullet",
+            "varType": 5
+        },
+        {
+            "id": "1e40e936-597c-4b68-8bd0-b127e8404c67",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "600",
+            "varName": "gun_range",
+            "varType": 0
+        },
+        {
+            "id": "f1422b97-dd17-45fa-97d9-3d926f2c7791",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "bounce",
             "varType": 3
         }
     ],

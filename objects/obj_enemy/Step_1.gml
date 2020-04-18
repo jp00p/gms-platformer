@@ -1,4 +1,7 @@
 if(hp <= 0){
+	if(owner){
+		owner.num_monsters--;
+	}
 	with(instance_create_layer(x,y,"Enemies",obj_corpse)){
 		// fling!
 		direction = other.hit_from;

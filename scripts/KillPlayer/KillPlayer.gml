@@ -3,6 +3,8 @@ with(obj_gun){
 	instance_destroy();
 }
 
+global.num_lives--;
+
 instance_change(obj_player_corpse,true);
 
 direction = point_direction(other.x, other.y, x, y);
