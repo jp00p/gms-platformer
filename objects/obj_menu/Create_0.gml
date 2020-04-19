@@ -7,8 +7,8 @@ gui_width = display_get_gui_width();
 gui_height = display_get_gui_height();
 gui_margin = 16;
 
-menu_x = gui_width+200; // starts off screen
-menu_y = gui_height - gui_margin;
+menu_x = RES_W+200; // starts off screen
+menu_y = RES_H - gui_margin;
 menu_x_target = gui_width - gui_margin;
 menu_speed = 10; 
 menu_font = fnt_menu;

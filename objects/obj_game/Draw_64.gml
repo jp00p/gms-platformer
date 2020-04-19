@@ -37,14 +37,6 @@ if(paused){
 	draw_text(sprite_col-16, sprite_row*10, "Powers and HP are reset each level.");
 	draw_text(sprite_col-16, sprite_row*11, "Press CTRL+F to toggle fullscreen");
 	
-	
-	
-	
-	
-	
-	
-	
-	
 }
 if((room != room_title) && (instance_exists(obj_player))){
 
